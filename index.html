@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FakeStore</title>
+  <title>Gulistan Sotre</title>
   <link rel="stylesheet" href="./css/style.css" />
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-    
+
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
   <!-- google Montserrat  font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,19 +21,31 @@
 
 
 </head>
-
 <body>
-  <header></header>
+  <header>
+    
+    <!-- search button added by Gulistan store -->
+    <section class="container my-5">
+      <h1 class="my-4 text-center fw-bold text-success">Welcome to Gulistan Store</h1>
+      <div class="col-md-6 d-flex mx-auto">
+        <input type="text" class="form-control me-2" placeholder="Search Your Product" aria-describedby="button-addon2">
+        <button class="btn btn-outline-success" type="button" id="button-addon2">Search</button>
+      </div>
+  </section>
+
+  </header>
   <main class="main">
-    <div class="search-field">
+
+    <!-- <div class="search-field">
       <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
+        <input id="input-field" class="search-field" type="text" placeholder="Search Your Product" />
         <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
           autocomplete="off" id="search-btn" onclick="loadProducts()">
           Search
         </button>
       </div>
-    </div>
+    </div> -->
+
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
@@ -95,5 +107,4 @@
   <!-- add javascript  file  -->
   <script src="./js/app.js"></script>
 </body>
-
 </html>
